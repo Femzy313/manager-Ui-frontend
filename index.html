@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/manager ui/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+   <div class="overall-container">
+     <div class="input-extension">
+        <input type="text" disabled id="input">
+        <div class="img1">
+            <img src="/manager ui/manag... icon.svg" alt="">
+        </div>
+        <div class="img2">
+            <img id="setting" src="/manager ui/icon-sun.svg" alt="">
+            <div class="moon" id="moon">
+                <img src="/manager ui/icon-moon.svg" alt="" id="moons">
+            </div>
+        </div>
+    </div>
+    <div class="list-active">
+        <h2>Extentions List</h2>
+        <div class="active-inactive">
+            <button id="btn1">All</button>
+            <button id="btn2">Active</button>
+            <button id="btn3">Inactive</button>
+        </div>
+    </div>
+
+    <!--GRID EFFECT-->
+    <div class="grid-effect">
+        <!--DevLens-->
+        <div class="grid1" id="grids1">
+           <div class="image-content">
+             <img src="/manager ui/logo-devlens.svg" alt="" id="image">
+             <div class="content">
+                <h2>DevLens</h2>
+                <p>Quickly inspect page layout and visualize element boundaries.</p>
+            </div>
+           </div>
+           <div class="remove-switch">
+                <button>Remove</button>
+                <img src="/manager ui/icons8-switch-50.png" alt="">
+            </div>
+        </div>
+
+        <!--StyleSpy-->
+        <div class="grid1" id="grids2">
+           <div class="image-content">
+             <img src="/manager ui/logo-style-spy.svg" alt="">
+             <div class="content">
+                <h2>StyleSpy</h2>
+                <p>Instantly analyze and copy CSS from any webpage element</p>
+            </div>
+           </div>
+           <div class="remove-switch">
+                <button>Remove</button>
+                <img src="/manager ui/icons8-switch-50.png" alt="">
+            </div>
+        </div>
+
+         <!--SpeedBoost-->
+        <div class="grid11" >
+           <div class="image-content">
+             <img src="/manager ui/logo-speed-boost.svg" alt="">
+             <div class="content">
+                <h2>SpeedBoost</h2>
+                <p>Optimizes browser resource usage to accelerate page loading.</p>
+            </div>
+           </div>
+           <div class="remove-switch">
+                <button>Remove</button>
+                <img src="/manager ui/icons8-switch-50.png" alt="">
+            </div>
+        </div>
+
+          <!--JSONWizard-->
+        <div class="grid1" id="grids3">
+           <div class="image-content">
+             <img src="/manager ui/logo-json-wizard.svg" alt="">
+             <div class="content">
+                <h2>JSONWizard</h2>
+                <p>Formats, validates, and prettifies JSON reponses in-browser</p>
+            </div>
+           </div>
+           <div class="remove-switch">
+                <button>Remove</button>
+                <img src="/manager ui/icons8-switch-50.png" alt="">
+            </div>
+        </div>
+
+         <!--TabMaster Pro-->
+        <div class="grid1" id="grids4">
+           <div class="image-content">
+             <img src="/manager ui/logo-tab-master-pro.svg" alt="">
+             <div class="content">
+                <h2>TabMaster Pro</h2>
+                <p>Organizes browser tabs into group and sessions</p>
+            </div>
+           </div>
+           <div class="remove-switch">
+                <button>Remove</button>
+                <img src="/manager ui/icons8-switch-50.png" alt="">
+            </div>
+        </div>
+
+         <!--ViewportBuddy-->
+        <div class="grid11">
+           <div class="image-content">
+             <img src="/manager ui/logo-viewport-buddy.svg" alt="">
+             <div class="content">
+                <h2>ViewportBuddy</h2>
+                <p>Simulates various screen resolutions directly within the browser.</p>
+            </div>
+           </div>
+           <div class="remove-switch">
+                <button>Remove</button>
+                <img src="/manager ui/icons8-switch-50.png" alt="">
+            </div>
+        </div>
+
+         <!--Markup Notes-->
+        <div class="grid1" id="grids5">
+           <div class="image-content">
+             <img src="/manager ui/logo-markup-notes.svg" alt="">
+             <div class="content">
+                <h2>Markup Notes</h2>
+                <p>Enables annotation and notes directly onto webpages for collaborative debugging.</p>
+            </div>
+           </div>
+           <div class="remove-switch">
+                <button>Remove</button>
+                <img src="/manager ui/icons8-switch-50.png" alt="">
+            </div>
+        </div>
+
+         <!--GridGuides-->
+        <div class="grid11">
+           <div class="image-content">
+             <img src="/manager ui/logo-grid-guides.svg" alt="">
+             <div class="content">
+                <h2>GridGuides</h2>
+                <p>Overlay customizable grids and alignment guides on any webpage.</p>
+            </div>
+           </div>
+           <div class="remove-switch">
+                <button>Remove</button>
+                <img src="/manager ui/icons8-switch-50.png" alt="">
+            </div>
+        </div>
+
+         <!--Palette Picker-->
+        <div class="grid1" id="grids6">
+           <div class="image-content">
+             <img src="/manager ui/logo-palette-picker.svg" alt="">
+             <div class="content">
+                <h2>Palette Picker</h2>
+                <p>Instantly extracts color palattes from any webpage.</p>
+            </div>
+           </div>
+           <div class="remove-switch">
+                <button>Remove</button>
+                <img src="/manager ui/icons8-switch-50.png" alt="">
+            </div>
+        </div>
+
+         <!--LinkChecker-->
+        <div class="grid1" id="grids7">
+           <div class="image-content">
+             <img src="/manager ui/logo-link-checker.svg" alt="">
+             <div class="content">
+                <h2>LinkChecker</h2>
+                <p>Scans and highlights broken links on any page.</p>
+            </div>
+           </div>
+           <div class="remove-switch">
+                <button>Remove</button>
+                <img src="/manager ui/icons8-switch-50.png" alt="">
+            </div>
+        </div>
+
+         <!--Dom Snapshot-->
+        <div class="grid11" >
+           <div class="image-content">
+             <img src="/manager ui/logo-dom-snapshot.svg" alt="">
+             <div class="content">
+                <h2>Dom Snapshot</h2>
+                <p>Capture and export DOM structures quickly.</p>
+            </div>
+           </div>
+           <div class="remove-switch">
+                <button>Remove</button>
+                <img src="/manager ui/icons8-switch-50.png" alt="">
+            </div>
+        </div>
+
+         <!--ConsolePlus-->
+        <div class="grid1" id="grids8">
+           <div class="image-content">
+             <img src="/manager ui/logo-console-plus.svg" alt="">
+             <div class="content">
+                <h2>ConsolePlus</h2>
+                <p>Enhanced developer console with advanced filtering and logging.</p>
+            </div>
+           </div>
+           <div class="remove-switch">
+                <button>Remove</button>
+                <img src="/manager ui/icons8-switch-50.png" alt="">
+            </div>
+        </div>
+    </div>
+   </div>
+
+
+   <script src="/manager ui/script.js"></script>
+</body>
+</html>

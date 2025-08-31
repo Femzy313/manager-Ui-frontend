@@ -1,0 +1,261 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(227, 75%, 14%);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.overall-container{
+    position: relative;
+    background-color: hsl(227, 75%, 14%);
+}
+.input-extension input{
+   width: 135vh;
+   height: 40px;
+   background-color: hsl(226, 25%, 17%);
+   margin-bottom: 40px;
+}
+.input-extension input.light{
+    background-color: hsl(200, 60%, 99%);
+    color: hsl(227, 75%, 14%);
+}
+.img1 img{
+    width: 15vh;
+    position: absolute;
+    top: 1px;
+    padding-left: 7px;
+    padding-top: 7px;   
+}
+.img2 img{
+    display: block;
+    width: 25px;
+    position: absolute;
+    right: 18px;
+    top: 5px;
+    padding-right: 7px;
+    border: 3px solid;
+    
+}
+.img2 img.black{
+    display: none;
+}
+.moon img{
+    display: none;
+    position: absolute;
+    right: 18px;
+    top: 5px;
+    padding-right: 7px;
+    border: 3px solid;
+    background-color: hsl(0, 0%, 93%);
+    padding: 5px;
+}
+.moon img.white{
+    display: block;
+    background-color: hsl(0, 0%, 78%);
+}
+.list-active{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.active-inactive{
+    display: flex;
+    gap: 20px;
+    
+}
+.active-inactive button{
+    border: 1px solid;
+    padding: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: hsl(226, 25%, 17%);
+    color: white;
+    border: none;
+}
+.active-inactive button.light{
+    color: hsl(225, 23%, 24%);
+    background-color: hsl(200, 60%, 99%);
+    border: 2px solid;
+}
+.active-inactive button:nth-child(1){
+    border: 2px solid;
+    background-color: hsl(3, 86%, 64%);
+    width: 40px;
+    color: hsl(226, 25%, 17%);
+}
+.active-inactive button:nth-child(2).active{
+    border: 2px solid;
+    background-color: hsl(3, 86%, 64%);
+    color: hsl(226, 25%, 17%);
+}
+.active-inactive button:nth-child(3).actives{
+    border: 2px solid;
+    background-color: hsl(3, 86%, 64%);
+    color: hsl(226, 25%, 17%);
+}
+
+/*Grid Effect*/
+.grid-effect{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap: 4px;
+    column-gap: 4px;
+    padding-bottom: 40px;
+}
+.grid1{
+    display: block;
+    color: white;
+    width: 45vh;
+    border: 3px solid hsl(226, 25%, 17%);
+    padding: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    background-color: hsl(226, 25%, 17%);
+}
+.grid1.inactive{
+    display: none;
+}
+.grid1.moon{
+    background-color: hsl(200, 60%, 99%);
+    color: hsl(227, 75%, 14%);
+}
+.image-content{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+.image-content img{
+    
+    width: 35px;
+    margin-bottom: 22px;
+}
+.content h1{
+    font-size: 12px;
+}
+.content p{
+    font-size: 17px;
+}
+.remove-switch{
+    display: flex;
+    justify-content: space-between;
+}
+.remove-switch button{
+    width: 10vh;
+    height: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(10, 10, 19);
+}
+.remove-switch img{
+    
+    width: 20px;
+    color: hsl(3, 71%, 56%);
+    background-color: hsl(3, 71%, 56%);
+    cursor: pointer;
+    
+}
+.grid11{
+    display: block;
+    color: white;
+    width: 45vh;
+    border: 3px solid hsl(226, 25%, 17%);
+    padding: 10px;
+    border-radius: 15px;
+    background-color: hsl(226, 25%, 17%);
+}
+.grid11.active{
+    display:none
+}
+.grid11.moon{
+    background-color: hsl(200, 60%, 99%);
+    color: hsl(227, 75%, 14%);
+}
+.grid11 .remove-switch img{
+    width: 20px;
+    color: white;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+@media(max-width:1440px){
+    .input-extension input{
+   width: 190vh;
+   }
+    .grid1{
+    width: 60vh;
+  }
+  .grid11{
+    width: 60vh;
+  }
+  .remove-switch button{
+    width: 20vh;
+   }
+}
+@media(max-width:1024px){
+    .input-extension input{
+   width: 215vh;
+   }
+    .grid1{
+    width: 70vh;
+  }
+  .grid11{
+    width: 70vh;
+  }
+}
+@media(max-width:1024px){
+    .input-extension input{
+   width: 150vh;
+   }
+    .grid-effect{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    column-gap: 2px;
+    gap: 4px;
+}
+}
+@media(max-width:425px){
+    .input-extension input{
+   width: 80vh;
+   }
+   .list-active{
+    display: block;
+   }
+   .list-active h2{
+      padding-bottom: 30px;
+      font-size: 22px;
+   }
+   .active-inactive{
+    justify-content: center;
+   }
+   .active-inactive button{
+    font-size: 20px;
+    width: 27vh;
+    background-color: white;
+    color: hsl(226, 25%, 17%);
+   }
+    .grid-effect{
+    display: grid;
+    grid-template-columns:repeat(1, 1fr);
+    column-gap: 2px;
+    gap: 4px;
+   
+   } 
+    .grid1{
+    margin: auto;
+   }
+   .grid11{
+    margin: auto;
+   }
+}
